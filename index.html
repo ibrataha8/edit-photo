@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon-pic.png">
+    <title>Edit-Photo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="img">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" id="grayscale" min="0" max="1" step="0.1" value="0">
+                </li>
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" min="0" max="100" step="1" value="0">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" min="0" max="10" step="0.1" value="0">
+                </li>
+                <li>
+                    <label for="hue-rotate">Hue Rotate</label>
+                    <input type="range" id="hue-rotate" min="0" max="360" value="0">
+                </li>
+                <li>
+                    <a download="Votre-image" id="download">Download <i class="fa-solid fa-circle-down"></i></a>
+                    <span id="resetTout">Reset</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
